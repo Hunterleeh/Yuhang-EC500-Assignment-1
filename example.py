@@ -1,21 +1,17 @@
-# ============================================================
-# Defining your own functions here
-# ============================================================
+import numpy as np
 
-def add(a, b):
-    return a + b
+# Fahrenheit = (Celsius * 9/5) + 32
+def c2f(c):
+  if not isinstance(c, int):
+    return "ERROR -----> It is not a int"
+  
+  f = (c * 9 / 5) + 32
+  return round(f, 2) # Keep 2 decimals
 
-def subtract(a, b):
-    return a - b
-
-# ============================================================
-# Defining your own testing here
-# ============================================================
-
-def test_add():
-    assert add(2, 3) == 5
-    assert add('boston', 'university') == 'bostonuniversity'
-
-
-def test_subtract():
-    assert subtract(2, 3) == -1
+# Celsius = (Fahrenheit – 32) * 5/9
+def f2c(f):
+  if not isinstance(f, int):
+    return "ERROR -----> It is not a int"
+  
+  c = (f - 32) * 5 / 9
+  return round(c, 2) # Keep 2 decimals
