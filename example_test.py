@@ -20,3 +20,13 @@ def test_f2c():
   assert f2c("String") == "ERROR -----> It is not a int"
   assert f2c("-123") == "ERROR -----> It is not a int"
   assert f2c("ec500") == "ERROR -----> It is not a int"
+
+def test_meter2foot():
+  #assert some right cases
+  assert meter2foot(0) == 0.00
+  assert meter2foot(50) == 15.24
+  assert meter2foot(999) == 304.50
+  #assert some error here
+  assert meter2foot("String") == "ERROR -----> It is not a positive number"
+  assert meter2foot(-123) == "ERROR -----> It is not a positive number"
+  assert meter2foot("ec500") == "ERROR -----> It is not a positive number"
