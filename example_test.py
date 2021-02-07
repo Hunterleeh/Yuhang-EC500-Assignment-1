@@ -42,7 +42,7 @@ def test_foot2meter():
   assert foot2meter(-123) == "ERROR -----> It is not a positive number"
   assert foot2meter("ec500") == "ERROR -----> It is not a positive number"
   
-def inch2meter():
+def test_inch2meter():
   #assert some right cases
   assert inch2meter(0) == 0.00
   assert inch2meter(50) == 1968.50
@@ -52,7 +52,7 @@ def inch2meter():
   assert inch2meter(-123) == "ERROR -----> It is not a positive number"
   assert inch2meter("ec500") == "ERROR -----> It is not a positive number"
 
-def meter2inch():
+def test_meter2inch():
   #assert some right cases
   assert meter2inch(0) == 0.0000
   assert meter2inch(50) == 1.2700
@@ -62,7 +62,7 @@ def meter2inch():
   assert meter2inch(-123) == "ERROR -----> It is not a positive number"
   assert meter2inch("ec500") == "ERROR -----> It is not a positive number"
   
-def KgtoPound():
+def test_KgtoPound():
   #assert some right cases
   assert KgtoPound(0) == 0.000
   assert KgtoPound(50) == 22.700
@@ -72,7 +72,7 @@ def KgtoPound():
   assert KgtoPound(-123) == "ERROR -----> It is not a positive number"
   assert KgtoPound("ec500") == "ERROR -----> It is not a positive number"
   
-def PoundtoKg():
+def test_PoundtoKg():
   #assert some right cases
   assert PoundtoKg(0) == 0.00
   assert PoundtoKg(50) == 110.00
