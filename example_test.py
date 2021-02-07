@@ -2,7 +2,7 @@ from converter import *
 import pytest
 
 def test_c2f():
-  assert some right cases
+  #assert some right cases
   assert c2f(0) == 32.00
   assert c2f(100) == 212.00
   assert c2f(999) == 1830.20
