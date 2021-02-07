@@ -12,4 +12,11 @@ def test_c2f():
   assert c2f("ec500") == "ERROR -----> It is not a int"
   
 def test_f2c():
-  pass
+  #assert some right cases
+  assert f2c(32) == 0.00
+  assert f2c(212) == 100.00
+  assert f2c(932) == 500.00
+  #assert some error here
+  assert f2c("String") == "ERROR -----> It is not a int"
+  assert f2c("-123") == "ERROR -----> It is not a int"
+  assert f2c("ec500") == "ERROR -----> It is not a int"
