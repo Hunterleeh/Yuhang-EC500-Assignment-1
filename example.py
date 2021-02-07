@@ -3,8 +3,7 @@ import numpy as np
 # Fahrenheit = (Celsius * 9/5) + 32
 def c2f(c):
   if not isinstance(c, int):
-    return "ERROR -----> It is not a int"
-  
+    return "ERROR -----> It is not a int"  
   f = (c * 9 / 5) + 32
   return round(f, 2) # Keep 2 decimals
 
@@ -12,6 +11,41 @@ def c2f(c):
 def f2c(f):
   if not isinstance(f, int):
     return "ERROR -----> It is not a int"
-  
   c = (f - 32) * 5 / 9
   return round(c, 2) # Keep 2 decimals
+
+def meter2foot(m):
+  if m < 0:
+    return "ERROR -----> It is a negative number"
+  f = 0.3048 * m
+  return round(f, 2) # Keep 2 decimals
+
+def foot2meter(f):
+  if f < 0:
+    return "ERROR -----> It is a negative number"
+  m = 3.28 * f
+  return round(m, 2) # Keep 2 decimals
+
+def inch2meter(i):
+  if i < 0:
+    return "ERROR -----> It is a negative number"
+  m = 39.37 * i
+  return round(m, 2) # Keep 2 decimals
+
+def meter2inch(m):
+  if m < 0:
+    return "ERROR -----> It is a negative number"
+  i = 0.0254 * m
+  return round(i, 4) # Keep 2 decimals
+
+def KgtoPound(kg):
+  if kg < 0:
+    return "ERROR -----> It is a negative number"
+  p = 0.454 * kg
+  return round(p, 3) # Keep 2 decimals
+
+def PoundtoKg(p):
+  if p < 0:
+    return "ERROR -----> It is a negative number"
+  kg = 2.2 * p
+  return round(kg, 2) # Keep 2 decimals
