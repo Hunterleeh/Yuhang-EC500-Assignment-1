@@ -15,7 +15,7 @@ def f2c(f):
   return round(c, 2) # Keep 2 decimals
 
 def meter2foot(m):
-  if not isinstance(m, float) or m < 0:
+  if m < 0 or not isinstance(m, float):
     return "ERROR -----> It is not a positive number"
   f = 0.3048 * m
   return round(f, 2) # Keep 2 decimals
