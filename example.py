@@ -15,49 +15,49 @@ def f2c(f):
   return round(c, 2) # Keep 2 decimals
 
 def meter2foot(m):
-  if m < 0:
+  if not isinstance(m, float) and not isinstance(m, int):
     return "ERROR -----> It is not a positive number"
-  if not isinstance(m, float):
+  if m < 0:
     return "ERROR -----> It is not a positive number"
   f = 0.3048 * m
   return round(f, 2) # Keep 2 decimals
 
 def foot2meter(f):
-  if f < 0:
+  if not isinstance(f, float) and not isinstance(f, int):
     return "ERROR -----> It is not a positive number"
-  if not isinstance(f, float):
+  if f < 0:
     return "ERROR -----> It is not a positive number"
   m = 3.28 * f
   return round(m, 2) # Keep 2 decimals
 
 def inch2meter(i):
-  if i < 0:
+  if not isinstance(i, float) and not isinstance(i, int):
     return "ERROR -----> It is not a positive number"
-  if not isinstance(i, float):
+  if i < 0:
     return "ERROR -----> It is not a positive number"
   m = 39.37 * i
   return round(m, 2) # Keep 2 decimals
 
 def meter2inch(m):
+  if not isinstance(m, float) and not isinstance(m, int):
+    return "ERROR -----> It is not a positive number"
   if m < 0:
     return "ERROR -----> It is not a positive number"
-  if not isinstance(m, float):
-    return "ERROR -----> It is not a positive number"
   i = 0.0254 * m
-  return round(i, 4) # Keep 2 decimals
+  return round(i, 4) # Keep 4 decimals
 
 def KgtoPound(kg):
+  if not isinstance(kg, float) and not isinstance(kg, int):
+    return "ERROR -----> It is not a positive number"
   if kg < 0:
     return "ERROR -----> It is not a positive number"
-  if not isinstance(kg, float):
-    return "ERROR -----> It is not a positive number"
   p = 0.454 * kg
-  return round(p, 3) # Keep 2 decimals
+  return round(p, 3) # Keep 3 decimals
 
 def PoundtoKg(p):
-  if p < 0:
+  if not isinstance(p, float) and not isinstance(p, int):
     return "ERROR -----> It is not a positive number"
-  if not isinstance(p, float):
+  if p < 0:
     return "ERROR -----> It is not a positive number"
   kg = 2.2 * p
   return round(kg, 2) # Keep 2 decimals
