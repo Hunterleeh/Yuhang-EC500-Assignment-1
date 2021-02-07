@@ -46,7 +46,7 @@ def test_inch2meter():
   #assert some right cases
   assert inch2meter(0) == 0.00
   assert inch2meter(50) == 1968.50
-  assert inch2meter(100.5) == 3956.67
+  assert inch2meter(100.5) == 3956.68
   #assert some error here
   assert inch2meter("String") == "ERROR -----> It is not a positive number"
   assert inch2meter(-123) == "ERROR -----> It is not a positive number"
