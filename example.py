@@ -15,7 +15,7 @@ def f2c(f):
   return round(c, 2) # Keep 2 decimals
 
 def meter2foot(m):
-  if not isinstance(f, float):
+  if not isinstance(m, float):
     return "ERROR -----> It is not a number"
   if m < 0:
     return "ERROR -----> It is a negative number"
@@ -31,7 +31,7 @@ def foot2meter(f):
   return round(m, 2) # Keep 2 decimals
 
 def inch2meter(i):
-  if not isinstance(f, float):
+  if not isinstance(i, float):
     return "ERROR -----> It is not a number"
   if i < 0:
     return "ERROR -----> It is a negative number"
@@ -39,7 +39,7 @@ def inch2meter(i):
   return round(m, 2) # Keep 2 decimals
 
 def meter2inch(m):
-  if not isinstance(f, float):
+  if not isinstance(m, float):
     return "ERROR -----> It is not a number"
   if m < 0:
     return "ERROR -----> It is a negative number"
@@ -47,7 +47,7 @@ def meter2inch(m):
   return round(i, 4) # Keep 2 decimals
 
 def KgtoPound(kg):
-  if not isinstance(f, float):
+  if not isinstance(kg, float):
     return "ERROR -----> It is not a number"
   if kg < 0:
     return "ERROR -----> It is a negative number"
@@ -55,7 +55,7 @@ def KgtoPound(kg):
   return round(p, 3) # Keep 2 decimals
 
 def PoundtoKg(p):
-  if not isinstance(f, float):
+  if not isinstance(p, float):
     return "ERROR -----> It is not a number"
   if p < 0:
     return "ERROR -----> It is a negative number"
