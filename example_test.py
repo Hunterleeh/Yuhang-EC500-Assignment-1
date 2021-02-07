@@ -1,4 +1,4 @@
-from converter import *
+from example import *
 import pytest
 
 def test_c2f():
