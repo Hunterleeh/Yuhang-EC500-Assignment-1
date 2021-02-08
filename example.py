@@ -71,10 +71,14 @@ def PoundtoKg(p):
 
 #The program has a fixed stucture: What is xxx xxx in xxx
 def breaker(texture):
+  if len(texture.split()) < 6:
+    return "ERROR -----> You have inputed an invalid texture!"
   information = [0, '', '']
   information[0] = float(texture.split()[2])
   information[1] = texture.split()[3]
   information[2] = texture.split()[5]
+  if not information[1] in units or not information[2] in units:
+    return "ERROR -----> You have inputed an invalid texture!"
   return information
 
 def convertor(num, source_unit, goal_unit):
