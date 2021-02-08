@@ -43,7 +43,7 @@ def meter2inch(i):
   if i < 0:
     return "ERROR -----> It is not a positive number"
   m = 39.37 * i
-  return round(m, 2) # Keep 2 decimals
+  return round(m, 4) # Keep 4 decimals
 
 def inch2meter(m):
   if not isinstance(m, float) and not isinstance(m, int):
@@ -51,7 +51,7 @@ def inch2meter(m):
   if m < 0:
     return "ERROR -----> It is not a positive number"
   i = 0.0254 * m
-  return round(i, 4) # Keep 4 decimals
+  return round(i, 2) # Keep 2 decimals
 
 def KgtoPound(kg):
   if not isinstance(kg, float) and not isinstance(kg, int):
