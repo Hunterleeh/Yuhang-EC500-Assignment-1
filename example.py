@@ -82,7 +82,7 @@ def breaker(texture):
   return information
 
 def convertor(texture):
-  if breaker(texture) == "ERROR -----> You have inputed an invalid texture!"
+  if breaker(texture) == "ERROR -----> You have inputed an invalid texture!":
     return "ERROR -----> You have inputed an invalid texture!"
   num, source_unit, goal_unit = breaker(texture)
   if (source_unit == units[0] or source_unit == units[1]) and (goal_unit == units[2] or goal_unit == units[3]):
