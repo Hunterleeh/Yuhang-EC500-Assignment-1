@@ -7,9 +7,9 @@ def test_c2f():
   assert c2f(100) == 212.00
   assert c2f(999) == 1830.20
   #assert some error here
-  assert c2f("String") == "ERROR -----> It is not a int"
-  assert c2f("-123") == "ERROR -----> It is not a int"
-  assert c2f("ec500") == "ERROR -----> It is not a int"
+  assert c2f("String") == "ERROR -----> It is not a number"
+  assert c2f("-123") == "ERROR -----> It is not a number"
+  assert c2f("ec500") == "ERROR -----> It is not a number"
   
 def test_f2c():
   #assert some right cases
@@ -17,9 +17,9 @@ def test_f2c():
   assert f2c(212) == 100.00
   assert f2c(932) == 500.00
   #assert some error here
-  assert f2c("String") == "ERROR -----> It is not a int"
-  assert f2c("-123") == "ERROR -----> It is not a int"
-  assert f2c("ec500") == "ERROR -----> It is not a int"
+  assert f2c("String") == "ERROR -----> It is not a number"
+  assert f2c("-123") == "ERROR -----> It is not a number"
+  assert f2c("ec500") == "ERROR -----> It is not a number"
 
 def test_meter2foot():
   #assert some right cases
