@@ -95,14 +95,14 @@ def test_breaker():
 
 def test_convertor():
   #assert some right cases
-  assert convertor(breaker("what is 50 inches in meters")) == 1.27
-  assert convertor(breaker("what is 50 meters in inches")) == 1968.50
-  assert convertor(breaker("what is 50 meters in feet")) == 15.24
-  assert convertor(breaker("what is 50 feet in meters")) == 164.00
-  assert convertor(breaker("what is 50 kilograms in pounds")) == 22.700
-  assert convertor(breaker("what is 50 pounds in kilograms")) == 110.00
-  assert convertor(breaker("what is 100 Celsius in Fahrenheit")) == 212.00
-  assert convertor(breaker("what is 212 Fahrenheit in Celsius")) == 100.00
+  assert convertor("what is 50 inches in meters") == 1.27
+  assert convertor("what is 50 meters in inches") == 1968.50
+  assert convertor("what is 50 meters in feet") == 15.24
+  assert convertor("what is 50 feet in meters") == 164.00
+  assert convertor("what is 50 kilograms in pounds") == 22.700
+  assert convertor("what is 50 pounds in kilograms") == 110.00
+  assert convertor("what is 100 Celsius in Fahrenheit") == 212.00
+  assert convertor("what is 212 Fahrenheit in Celsius") == 100.00
   #assert some error cases
-  assert convertor(breaker("what is 212 Fahrenheit in Fahrenheit")) == "ERROR -----> You have inputed an invalid unit pair!"
-  assert convertor(breaker("what is 212 kg in pounds")) == "ERROR -----> You have inputed an invalid unit pair!"
+  assert convertor("what is 212 Fahrenheit in Fahrenheit") == "ERROR -----> You have inputed an invalid unit pair!"
+  assert convertor("what is 212 kg in pounds") == "ERROR -----> You have inputed an invalid unit pair!"
