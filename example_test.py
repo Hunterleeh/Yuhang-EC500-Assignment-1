@@ -81,3 +81,6 @@ def test_PoundtoKg():
   assert PoundtoKg("String") == "ERROR -----> It is not a positive number"
   assert PoundtoKg(-123) == "ERROR -----> It is not a positive number"
   assert PoundtoKg("ec500") == "ERROR -----> It is not a positive number"
+
+def test_breaker():
+  assert breaker("what is 100 inches in meters") == [100.0, 'inches', 'meters']
