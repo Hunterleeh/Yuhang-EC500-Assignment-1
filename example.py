@@ -81,7 +81,8 @@ def breaker(texture):
     return "ERROR -----> You have inputed an invalid texture!"
   return information
 
-def convertor(num, source_unit, goal_unit):
+def convertor(texture):
+  num, source_unit, goal_unit = breaker(texture)
   if (source_unit == units[0] or source_unit == units[1]) and (goal_unit == units[2] or goal_unit == units[3]):
     return meter2foot(num)
   elif (source_unit == units[2] or source_unit == units[3]) and (goal_unit == units[0] or goal_unit == units[1]):
