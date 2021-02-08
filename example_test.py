@@ -44,9 +44,9 @@ def test_foot2meter():
   
 def test_inch2meter():
   #assert some right cases
-  assert inch2meter(0) == 0.0000
-  assert inch2meter(50) == 1.2700
-  assert inch2meter(100.5) == 2.5527
+  assert inch2meter(0) == 0.00
+  assert inch2meter(50) == 1.27
+  assert inch2meter(100.5) == 2.55
   #assert some error here
   assert inch2meter("String") == "ERROR -----> It is not a positive number"
   assert inch2meter(-123) == "ERROR -----> It is not a positive number"
@@ -56,7 +56,7 @@ def test_meter2inch():
   #assert some right cases
   assert meter2inch(0) == 0.00
   assert meter2inch(50) == 1968.50 
-  assert meter2inch(100.5) == 3956.685
+  assert meter2inch(100.5) == 3956.68
   #assert some error here
   assert meter2inch("String") == "ERROR -----> It is not a positive number"
   assert meter2inch(-123) == "ERROR -----> It is not a positive number"
