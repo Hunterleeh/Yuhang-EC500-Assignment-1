@@ -105,4 +105,4 @@ def test_convertor():
   assert convertor("what is 212 Fahrenheit in Celsius") == 100.00
   #assert some error cases
   assert convertor("what is 212 Fahrenheit in Fahrenheit") == "ERROR -----> You have inputed an invalid unit pair!"
-  assert convertor("what is 212 kg in pounds") == "ERROR -----> You have inputed an invalid unit pair!"
+  assert convertor("what is 212 kg in pounds") == "ERROR -----> You have inputed an invalid texture!"
