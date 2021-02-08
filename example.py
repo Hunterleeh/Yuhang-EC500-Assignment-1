@@ -16,7 +16,7 @@ def c2f(c):
 
 # Celsius = (Fahrenheit – 32) * 5/9
 def f2c(f):
-  if not isinstance(c, int) and not isinstance(c, float):
+  if not isinstance(f, int) and not isinstance(f, float):
     return "ERROR -----> It is not a number"
   c = (f - 32) * 5 / 9
   return round(c, 2) # Keep 2 decimals
